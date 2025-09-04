@@ -1,0 +1,33 @@
+/* Theme colors */
+:root {
+  --color-bg: #ffffff;
+  --color-primary: #BD9D54; /* goldish */
+  --color-dark: #231F20;    /* black */
+  --color-accent: #74C4B9;  /* light green */
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--color-bg); color: var(--color-dark); font: 16px/1.5 system-ui, Segoe UI, Roboto, Arial, sans-serif; }
+
+.container { width: min(1100px, 92%); margin: 0 auto; }
+
+.site-header { border-bottom: 4px solid var(--color-primary); background: #fff; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+.logo { display: flex; align-items: center; text-decoration: none; color: var(--color-dark); gap: 12px; }
+.logo img { height: 36px; width: auto; display: block; }
+.brand { font-weight: 700; letter-spacing: 0.2px; }
+
+nav .btn { margin-left: 8px; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--color-dark); color: var(--color-dark); text-decoration: none; }
+.btn.primary { background: var(--color-primary); border-color: var(--color-primary); color: #fff; }
+.btn:hover { filter: brightness(0.95); }
+
+.center { text-align: center; padding: 80px 0; }
+
+.auth-card { max-width: 380px; margin: 60px auto; border: 1px solid #ddd; border-radius: 8px; padding: 20px 24px; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+.auth-card h2 { margin-top: 0; }
+.form-row { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.form-row input { padding: 10px 12px; border: 1px solid #bbb; border-radius: 6px; }
+.alert { background: #fff3cd; border: 1px solid #ffeeba; color: #856404; padding: 10px 12px; border-radius: 6px; margin-bottom: 12px; }
+
+.site-footer { padding: 28px 0; color: #666; }
+
