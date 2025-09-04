@@ -16,9 +16,11 @@
         </a>
         <nav>
           {% if user.is_authenticated %}
-            <span class="welcome">Hello, {{ user.username }}</span>
+            <span class="welcome">Hello, {{ user.get_short_name|default:user.username }}</span>
+            {% if user.is_staff or user.is_superuser %}
+              <a class="btn" href="/admin/">Admin</a>
+            {% endif %}
             <a class="btn" href="{% url 'logout' %}">Logout</a>
-            <a class="btn" href="/admin/">Admin</a>
           {% else %}
             <a class="btn" href="{% url 'login' %}">Login</a>
           {% endif %}
@@ -35,4 +37,3 @@
     </footer>
   </body>
   </html>
-

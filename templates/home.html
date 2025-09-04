@@ -2,8 +2,7 @@
 {% block title %}Home · CV Analysis Project{% endblock %}
 {% block content %}
   <div class="center">
-    <h1>Welcome</h1>
+    <h1>Welcome, {{ request.user.first_name|default:request.user.username }}</h1>
     <p>We’ll build out this page next.</p>
   </div>
 {% endblock %}
-

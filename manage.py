@@ -22,3 +22,4 @@ if __name__ == '__main__':
     main()
 # username:admin
 # password:Admin123!
+# how to run: ..\.venv\Scripts\python.exe manage.py runserver
