@@ -1,5 +1,6 @@
 {
   "python.defaultInterpreterPath": ".venv\\Scripts\\python.exe",
   "git.enabled": true,
-  "git.autoRepositoryDetection": true
+  "git.autoRepositoryDetection": true,
+  "python.terminal.activateEnvironment": true
 }
